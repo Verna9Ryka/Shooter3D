@@ -1,0 +1,19 @@
+#body {
+    -fx-background-color: linear-gradient(to left top, #00BFFF, #8A2BE2);
+}
+.button
+{
+    -fx-padding: 5 10 5 10;
+    -fx-border-color: #FF8C00;
+    -fx-border-width: 2;
+    -fx-background-radius: 0;
+    -fx-background-color: #000000;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 12pt;
+    -fx-text-fill: #FFD700;
+}
+
+.button:hover
+{
+    -fx-background-color: #D2691E;
+}
