@@ -1,22 +1,29 @@
 package com.example.shooter3d;
 
+import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.scene.effect.Light;
+import javafx.scene.effect.Lighting;
+import javafx.scene.paint.Color;
+import javafx.scene.text.Font;
+import javafx.scene.text.FontWeight;
 
 public class MenuController {
     @FXML
-    private Label welcomeText;
-
+    private Label title;
     @FXML
     protected void onNewGameButtonClick() {
-        welcomeText.setText("NewGame");
+
+
     }
     @FXML
     protected void onSettingsButtonClick() {
-        welcomeText.setText("Settings");
+
     }
     @FXML
     protected void onExitButtonClick() {
-        welcomeText.setText("Exit");
+        Platform.exit();
+        System.exit(0);
     }
 }

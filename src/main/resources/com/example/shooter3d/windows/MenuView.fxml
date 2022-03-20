@@ -5,13 +5,13 @@
 <?import javafx.scene.layout.VBox?>
 
 <?import javafx.scene.control.Button?>
-<VBox fx:id = "body" alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+<VBox fx:id = "grad" alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
       fx:controller="com.example.shooter3d.MenuController" stylesheets="@../styles/MenuView.css">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
     </padding>
 
-    <Label fx:id="welcomeText"/>
+    <Label fx:id = "title" text="Shooter3D"/>
     <Button text="ИГРАТЬ" onAction="#onNewGameButtonClick"/>
     <Button text="НАСТРОЙКИ" onAction="#onSettingsButtonClick"/>
     <Button text="ВЫХОД" onAction="#onExitButtonClick"/>

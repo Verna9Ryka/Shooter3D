@@ -4,12 +4,10 @@ import javafx.application.Application;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXMLLoader;
-import javafx.geometry.Rectangle2D;
 import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 import javafx.scene.transform.Scale;
-import javafx.stage.Screen;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -19,11 +17,11 @@ public class MainApplication extends Application {
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("windows/MenuView.fxml"));
         Pane root = fxmlLoader.load();
-        //Scene scene = new Scene(fxmlLoader.load(), screenBounds.getWidth(), screenBounds.getHeight());
         Scene scene = new Scene(new Group(root));
         scene.getStylesheets().add(getClass().getResource("styles/MenuView.css").toExternalForm());
         stage.setTitle("Shooter3D");
         stage.setScene(scene);
+        stage.setFullScreenExitHint("");
         stage.show();
 
         letterbox(scene, root);
@@ -67,6 +65,7 @@ public class MainApplication extends Application {
             }
         }
     }
+
 
     public static void main(String[] args) {
         launch();
