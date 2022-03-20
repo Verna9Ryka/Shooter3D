@@ -1,12 +1,17 @@
 #grad {
-    -fx-background-color: linear-gradient(to left top, #00BFFF, #8A2BE2);
+    -fx-background-color: linear-gradient(to left bottom, #00BFFF, #FF1493);
 }
 
 .label {
     -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
-    -fx-font-size: 20pt;
-    -fx-text-fill: linear-gradient(from 0% 0% to 100% 200%, repeat, #00BFFF 0%, #8A2BE2 50%);;
+    -fx-font-size: 25pt;
+    -fx-text-fill: linear-gradient(from 0% 0% to 100% 200%, repeat, #00BFFF 0%, #FF1493 75%);;
     -fx-effect: dropshadow(three-pass-box, rgb(75, 0, 130), 20, 0.75, 0, 0);
+}
+
+.label .text {
+    -fx-stroke: #000000;
+    -fx-stroke-width: 0.5px;
 }
 
 .button
