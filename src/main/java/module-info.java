@@ -12,4 +12,6 @@ module com.example.shooter3d {
 
     opens com.example.shooter3d to javafx.fxml;
     exports com.example.shooter3d;
+    exports com.example.shooter3d.controllers;
+    opens com.example.shooter3d.controllers to javafx.fxml;
 }
